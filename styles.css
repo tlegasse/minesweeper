@@ -1,0 +1,41 @@
+* {
+    font-family: 'VT323', monospace;
+}
+
+input {
+    border:1px solid #000;
+    width: 25px;
+    aspect-ratio: 1;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+input:not(.revealed) {
+    color: transparent;
+}
+
+
+input.revealed {
+    box-shadow: initial;
+    background-color: #333;
+}
+
+#game {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.status-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.status-bar > #timer,
+.status-bar > #mines-count {
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+}
